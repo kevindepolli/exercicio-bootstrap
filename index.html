@@ -10,9 +10,11 @@
 </head>
 <body>
     
-    <div class="container-fluid">
+    <div class="container">
 
         <header id="header">
+
+            <!--Carrosel-->
             <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel" style="display: none;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -30,6 +32,7 @@
                 </div>
             </div>
 
+            <!--Nav bar-->
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Navbar</a>
@@ -41,26 +44,57 @@
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cursos</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                                Nossos serviços
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                <li><a class="dropdown-item" href="#">Assesoria estundantil</a></li>
+                                <li><a class="dropdown-item" href="#">Palestras acadêmicas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Cursos de TI</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled">Disabled</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contato
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Fale conosco</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Me contatar</a></li>
+                            </ul>
                         </li>
                       </ul>
                   </div>
                 </div>
               </nav>
+              
+              <!--Modal-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
         </header>
 
