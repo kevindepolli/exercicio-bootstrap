@@ -1,0 +1,5 @@
+- fazer modal do contato
+- ajeitar a centralizaçao do texto da imagem e texto
+- ajustar o carrosel
+- ajustar cards
+- ajustar margin das imagens do card
