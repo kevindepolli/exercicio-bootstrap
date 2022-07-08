@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">    
+</head>
+<body>
+    
+    
+        
+        <header id="header">
+    
+            <!--Nav bar-->
+            <div class="container-xl">
+
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                          <ul class="navbar-nav">
+                              <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Quem somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cursos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nossos serviços
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                    <li><a class="dropdown-item" href="#">Assesoria estundantil</a></li>
+                                    <li><a class="dropdown-item" href="#">Palestras acadêmicas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cursos de TI</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contato
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Fale conosco</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Me contatar</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </nav>
+
+
+            </div>
+              
+              <!--Modal-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+        </header>
+    
+        <main id="fale-conosco">
+            
+            <div class="row">
+
+                <div class="d-flex justify-content-center">
+                    <div class="col-8">
+
+                        <form action="post">
+                            
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nome" placeholder="Qualquer Nome">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="cpf" placeholder="___.___.___-__">
+                                <label for="CPF" class="form-label">CPF</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="celular" placeholder="(__)_____-____">
+                                <label for="celular" class="form-label">Celular</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="email">Email</label>
+                            </div>
+
+                            <div class="form-floating">
+                                <select class="form-select" id="motivo" aria-label="motivo">
+                                  <option value="administrativo">Administrativo</option>
+                                  <option value="pedagogico">Pedagogico</option>
+                                  <option value="marketing">Marketing</option>
+                                  <option value="suporte">Suporte</option>
+                                </select>
+                                <label for="motivo">Motivo de contato</label>
+                            </div>
+
+                            <div class="list-group">
+
+                                <h3>Tipo de usuário:</h3>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="usuario" id="aluno">
+                                    <label class="form-check-label" for="aluno">
+                                        Aluno
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="usuario" id="empresa">
+                                    <label class="form-check-label" for="empresa">
+                                        Empresa
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="usuario" id="visitante">
+                                    <label class="form-check-label" for="visitante">
+                                        Visitante
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="comentarios" style="height: 100px"></textarea>
+                                <label for="comentarios">Comentários</label>
+                              </div>
+
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                        </form>
+
+
+
+
+
+                    </div>
+                </div>
+                
+            </div>
+            
+            </div>
+    
+    
+    
+    
+        </main>
+    
+    
+        
+        
+    </div>
+    
+    <div class="container-fluid">
+        <!--Rodapé-->
+        <div id="row3" class="row">
+    
+            <footer class="bg-light text-center text-white">
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                  <!-- Google -->
+                  <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #dd4b39;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-google"></i>
+                  </a>
+            
+                  <!-- Linkedin -->
+                  <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #0082ca;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-linkedin"></i>
+                  </a>
+                  <!-- Github -->
+                  <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #333333;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </section>
+                <!-- Section: Social media -->
+              </div>
+              <!-- Grid container -->
+            
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a 
+                class="text-white text-decoration-none" 
+                href="#"
+                data-bs-container="body" 
+                data-bs-toggle="popover" 
+                data-bs-placement="top" 
+                data-bs-content="Endereço">
+                Kevin Depolli Costa Florindo
+              </a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+    
+            
+          </div>
+    </div>
+    
+
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>

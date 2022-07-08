@@ -5,93 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link href="public/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     
-    <div class="container">
 
         <header id="header">
 
             <!--Carrosel-->
-            <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel" style="display: none;">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imagens/carousel-1.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagens/carousel-2.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagens/carousel-3.jpg" alt="" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imagens/carousel-4.jpg" alt="" class="d-block w-100">
+            <div class="container-xl">
+              <div class="row" style="height: 300px; overflow:hidden;">
+
+                <div id="carouselHeader" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagens/carousel-1.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/carousel-2.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/carousel-3.jpg" alt="" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/carousel-4.jpg" alt="" class="d-block w-100">
+                        </div>
                     </div>
                 </div>
+
+              </div>
             </div>
 
             <!--Nav bar-->
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Quem somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cursos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Nossos serviços
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Cursos</a></li>
-                                <li><a class="dropdown-item" href="#">Assesoria estundantil</a></li>
-                                <li><a class="dropdown-item" href="#">Palestras acadêmicas</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cursos de TI</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Contato
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Fale conosco</a></li>
-                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Me contatar</a></li>
-                            </ul>
-                        </li>
-                      </ul>
+            <div class="container xl">
+              
+              <nav class="navbar navbar-expand-lg bg-light">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">InfoBit</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#row2">Quem somos</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Nossos serviços
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Cursos</a></li>
+                                  <li><a class="dropdown-item" href="#">Assesoria estundantil</a></li>
+                                  <li><a class="dropdown-item" href="#">Palestras acadêmicas</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#row3">Cursos de TI</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Contato
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="fale-conosco.html">Fale conosco</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Me contatar</a></li>
+                              </ul>
+                          </li>
+                        </ul>
+                    </div>
                   </div>
-                </div>
-              </nav>
+                </nav>
+              
+            </div>
               
               <!--Modal-->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <h5 class="modal-title" id="exampleModalLabel">Informações para contato</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      ...
+                      
+                      <form action="post">
+
+                        
+                        <div class="form-floating mb-3">
+                          <input type="text" class="form-control" id="nome" placeholder="Qualquer Nome">
+                          <label for="nome" class="form-label">Nome Completo</label>
+                        </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="cpf" placeholder="___.___.___-__">
+                        <label for="CPF" class="form-label">CPF</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="celular" placeholder="(__)_____-____">
+                        <label for="celular" class="form-label">Celular</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">Email</label>
+                      </div>
+                      
+                    </form>
+
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Enviar</button>
                     </div>
                   </div>
                 </div>
@@ -99,13 +127,22 @@
 
         </header>
 
+      <div class="container">
+
         <main id="main">
 
           <!--Apresentação da empresa-->
-          <div id="row2" class="row d-none">
+          <div id="row2" class="row mt-3">
               <img src="imagens/carousel-1.jpg" alt="" class="figure-img img-fluid col-5">
-              <div class="col" style="background-color: cyan;">
-              <span class="align-bottom text-center" style="background-color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi autem explicabo, earum reprehenderit quidem neque? Exercitationem animi, commodi laboriosam, voluptates quos illo nisi ducimus architecto quia ratione perspiciatis quo molestias.</span>
+              <div class="col">
+              <span class=>
+                <p>
+                  Aprenda a explorar os diversos recursos da tecnologia e mantenha-se atualizado com o dinâmico mundo da informática. Com os cursos a distância do InfoBit, você aumenta suas chances no mercado de trabalho.
+                </p>
+                <p>
+                  Escolha um ensino de qualidade em uma instituição que é referência em educação profissional. Faça InfoBit!                
+                </p>
+              </span>
               </div>
           </div>
 
@@ -113,16 +150,16 @@
           <div id="row3" class="row d-flex justify-content-evenly">
 
           
-              <div class="card" style="width: 18rem;">
+              <div class="card mt-3" style="width: 18rem;">
                 <img src="imagens/carousel-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Curso Introdução à Informática</h5>
+                  <p class="card-text">Este curso tem como objetivo possibilitar aos participantes conhecimentos básicos sobre o Sistema Operacional Windows, as ferramentas básicas do Word para a edição e formatação de textos e Introdução à Internet.</p>
+                  <a href="curso-1.html" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card mt-3" style="width: 18rem;">
                 <img src="imagens/carousel-2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -131,7 +168,7 @@
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card mt-3" style="width: 18rem;">
                 <img src="imagens/carousel-3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -140,7 +177,7 @@
                 </div>
               </div>
 
-              <div class="card" style="width: 18rem;">
+              <div class="card mt-3" style="width: 18rem;">
                 <img src="imagens/carousel-4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -152,71 +189,73 @@
           </div>
 
 
-          <!--Rodapé-->
-          <div id="row3" class="row">
-
-            <footer class="bg-light text-center text-white">
-              <!-- Grid container -->
-              <div class="container p-4 pb-0">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                  <!-- Google -->
-                  <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #dd4b39;"
-                    href="#!"
-                    role="button"
-                    ><i class="bi bi-google"></i>
-                  </a>
-            
-                  <!-- Linkedin -->
-                  <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #0082ca;"
-                    href="#!"
-                    role="button"
-                    ><i class="bi bi-linkedin"></i>
-                  </a>
-                  <!-- Github -->
-                  <a
-                    class="btn btn-primary btn-floating m-1"
-                    style="background-color: #333333;"
-                    href="#!"
-                    role="button"
-                    ><i class="bi bi-github"></i
-                  ></a>
-                </section>
-                <!-- Section: Social media -->
-              </div>
-              <!-- Grid container -->
-            
-              <!-- Copyright -->
-              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2021 Copyright:
-                <a 
-                class="text-white text-decoration-none" 
-                href="#"
-                data-bs-container="body" 
-                data-bs-toggle="popover" 
-                data-bs-placement="top" 
-                data-bs-content="Endereço">
-                Kevin Depolli Costa Florindo
-              </a>
-              </div>
-              <!-- Copyright -->
-            </footer>
-
-            
-          </div>
-
+          
         </main>
+        
+        
+      </div>
 
-    </div>
+      <div class="conainer-fluid">        
+        <!--Rodapé-->
+        <div id="row3" class="row">
+          
+        <footer class="bg-light text-center text-white bottom-0 end-0">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Google -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-google"></i>
+              </a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-linkedin"></i>
+              </a>
+              <!-- Github -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #333333;"
+                href="#!"
+                role="button"
+                ><i class="bi bi-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a 
+            class="text-white text-decoration-none" 
+            href="#"
+            data-bs-container="body" 
+            data-bs-toggle="popover" 
+            data-bs-placement="top" 
+            data-bs-content="Endereço">
+            Kevin Depolli Costa Florindo
+          </a>
+          </div>
+          <!-- Copyright -->
+        </footer>
 
+        
+        </div>
+      </div>
 
-    
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="public/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script>
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
